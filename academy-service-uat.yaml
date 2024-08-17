@@ -1,0 +1,35 @@
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      show-details: always
+
+spring:
+  datasource:
+    url: jdbc:postgresql://149.50.140.55:5432/capnee
+    username: root
+    password: dbpassuat
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate.show_sql: true
+      hibernate.format_sql: true
+      hibernate.use_sql_comments: true
+
+
+security:
+  jwt:
+    secret-key: secret
+
