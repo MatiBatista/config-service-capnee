@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://149.50.140.55:8084/eureka/
+      defaultZone: http://localhost:8084/eureka/
 
 management:
   endpoints:
@@ -16,7 +16,7 @@ management:
 
 spring:
   datasource:
-    url: jdbc:postgresql://149.50.140.55:5432/capnee
+    url: jdbc:postgresql://localhost:5432/capnee
     username: root
     password: dbpassuat
     driver-class-name: org.postgresql.Driver
