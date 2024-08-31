@@ -16,19 +16,17 @@ management:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/capnee
+    url: jdbc:postgresql://149.50.140.55:5432/capnee
     username: root
-    password: 1925
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: dbpassuat
+    driver-class-name: org.postgresql.Driver
   jpa:
-    hibernate:
-      ddl-auto: update
+    hibernate.ddl-auto: update
     properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
-        show_sql: true
-        format_sql: true
-        use_sql_comments: true
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate.show_sql: true
+      hibernate.format_sql: true
+      hibernate.use_sql_comments: true
 
 
 
