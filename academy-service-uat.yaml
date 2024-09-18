@@ -1,6 +1,10 @@
 server:
   port: 8082
 
+micro
+  user
+    url: http://localhost:8081
+
 eureka:
   client:
     serviceUrl:
