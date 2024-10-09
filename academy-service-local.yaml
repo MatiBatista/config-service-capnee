@@ -6,6 +6,11 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8084/eureka/
 
+micro:
+  user:
+    url: http://149.50.140.55:8081
+    
+
 management:
   endpoints:
     web:
