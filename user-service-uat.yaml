@@ -28,6 +28,10 @@ spring:
       hibernate.format_sql: true
       hibernate.use_sql_comments: true
 
+micro:
+  academy:
+    url: http://localhost:8082
+
 
 security:
   jwt:
