@@ -37,4 +37,4 @@ security:
 
 micro:
   user:
-    url: http://149.50.140.55:8081  
+    url: http://localhost:8081  
