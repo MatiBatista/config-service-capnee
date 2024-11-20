@@ -18,7 +18,7 @@ management:
 
 spring:
   datasource:
-    url: jdbc:postgresql://149.50.140.55:5432/capnee
+    url: jdbc:postgresql://149.50.140.55:7799/capnee
     username: root
     password: dbpassuat
     driver-class-name: org.postgresql.Driver
