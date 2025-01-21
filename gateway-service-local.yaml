@@ -20,18 +20,6 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: academy-service
-          uri: lb://academy-service
-          predicates:
-            - Path=/academy/**
-          filters:
-            - StripPrefix=1
-        - id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/user/**
-          filters:
-            - StripPrefix=1
         - id: person-service
           uri: lb:/person-service
           predicates:
